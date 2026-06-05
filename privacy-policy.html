@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tally — Privacy Policy</title>
+<style>
+  :root { --brand:#059669; --teal:#0D9488; --ink:#0F172A; --muted:#475569; --line:#e5e7eb; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+         color:var(--ink); line-height:1.6; background:#f6f7fb; }
+  .bar { height:6px; background:linear-gradient(90deg,var(--brand),var(--teal)); }
+  main { max-width:760px; margin:0 auto; padding:32px 22px 64px; }
+  h1 { font-size:1.9rem; margin:.6em 0 .2em; }
+  h2 { font-size:1.2rem; margin:1.8em 0 .4em; color:var(--brand); }
+  .meta { color:var(--muted); font-size:.92rem; }
+  table { border-collapse:collapse; width:100%; margin:1em 0; font-size:.93rem; }
+  th,td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:#ecfdf5; }
+  a { color:var(--brand); }
+  code,.kbd { background:#eef2f7; border-radius:4px; padding:1px 5px; }
+  footer { margin-top:2.5em; padding-top:1em; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<div class="bar"></div>
+<main>
+  <h1>Privacy Policy — Tally</h1>
+  <p class="meta"><strong>Effective date:</strong> 2026-06-06 &nbsp;·&nbsp; <strong>Last updated:</strong> 2026-06-06</p>
+
+  <p>Tally (“the app”, “we”, “us”) is a personal-finance app published by <strong>NeoSystems</strong>.
+  This policy explains what data the app handles, when it leaves your device, and your choices.
+  Questions or requests: <strong><a href="mailto:contact@neosystems.cc">contact@neosystems.cc</a></strong>.</p>
+
+  <h2>Our core principle: local-first</h2>
+  <p>Tally works <strong>fully offline</strong>. All of your finance data is stored <strong>on your
+  device</strong> by default. Cloud features (account sign-in, sync, AI receipt cleanup, family
+  sharing, push notifications) are <strong>optional</strong>, and the data-sharing ones are
+  <strong>off by default</strong> and gated behind explicit in-app consent. If you never sign in,
+  <strong>no personal or financial data leaves your device.</strong></p>
+
+  <h2>What we collect and when it leaves your device</h2>
+  <table>
+    <tr><th>Data</th><th>When it leaves your device</th><th>Purpose</th><th>Control</th></tr>
+    <tr><td><strong>Email address</strong></td><td>When you create an account / sign in</td><td>Authentication, sync, family features (sign-in confirmation codes)</td><td>Optional — only if you sign in</td></tr>
+    <tr><td><strong>Financial data</strong> (transactions, budgets, projects, subscriptions, imported bank-statement entries)</td><td>When signed in with cloud sync</td><td>Sync your data across your devices</td><td>Optional — only when signed in</td></tr>
+    <tr><td><strong>Receipt images &amp; extracted text</strong></td><td>When you enable “AI receipt cleanup”, per receipt</td><td>Fix scan errors and suggest a category (cloud AI)</td><td>Off by default; per-use</td></tr>
+    <tr><td><strong>Receipt images (training)</strong></td><td>Only if you enable “Share my receipts”</td><td>Help improve our receipt models; earns you AI credits</td><td>Off by default; opt-in</td></tr>
+    <tr><td><strong>Bank-statement text</strong></td><td>When you import a PDF and AI categorization is on</td><td>Parse unrecognized banks / categorize entries. <strong>The raw PDF is never uploaded</strong> — only extracted text or the merchant list</td><td>Optional — only on import</td></tr>
+    <tr><td><strong>Push/device token</strong></td><td>When signed in</td><td>Notify you of family changes when the app is closed</td><td>Optional — only when signed in</td></tr>
+    <tr><td><strong>Diagnostics / crash logs</strong></td><td>Only if you enable “Send crash reports”</td><td>Diagnose crashes. <strong>Redacted</strong> — no amounts, merchants, notes, or emails</td><td>Off by default; opt-in</td></tr>
+  </table>
+  <p>We do <strong>not</strong> sell your data. We do <strong>not</strong> use it for advertising. We do not
+  access other apps installed on your device.</p>
+
+  <h2>Third-party processors</h2>
+  <p>When cloud features are used, data is processed by: <strong>Amazon Web Services</strong> (Cognito
+  authentication, AppSync/DynamoDB sync, S3 image storage, AWS Bedrock for AI — in the EU region), and
+  <strong>Google Firebase Cloud Messaging</strong> (push notifications). These providers process data on
+  our behalf under their own security and privacy terms. Data is encrypted in transit.</p>
+
+  <h2>Data retention and deletion</h2>
+  <p>Your data is retained while your account is active. You can, at any time, from <strong>Settings</strong>:</p>
+  <ul>
+    <li><strong>Export my data</strong> — download your transactions and categories as JSON.</li>
+    <li><strong>Delete all my cloud data</strong> — erase your data from the cloud (your device keeps its copy).</li>
+    <li><strong>Delete account</strong> — permanently erase your account and cloud data, including your
+      sign-in account and any uploaded receipt images. Items you shared with your family are retained for
+      those family members.</li>
+  </ul>
+  <p>You can also request deletion without the app: see
+  <strong><a href="data-deletion.html">Data Deletion</a></strong>.</p>
+
+  <h2>Children</h2>
+  <p>Tally is not directed to children and is not intended for users under 13 (or the minimum age in your country).</p>
+
+  <h2>Your rights</h2>
+  <p>Depending on your region (e.g. EU/EEA under GDPR), you have rights to access, export, correct, and
+  delete your data, and to withdraw consent. The in-app tools above cover access/export/deletion; for
+  anything else, contact <strong><a href="mailto:contact@neosystems.cc">contact@neosystems.cc</a></strong>.</p>
+
+  <h2>Changes</h2>
+  <p>We may update this policy; material changes will be reflected by the “Last updated” date above.</p>
+
+  <footer>
+    <strong>NeoSystems</strong><br>
+    <a href="mailto:contact@neosystems.cc">contact@neosystems.cc</a>
+  </footer>
+</main>
+</body>
+</html>
