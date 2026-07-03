@@ -26,7 +26,7 @@
 <div class="bar"></div>
 <main>
   <h1>Privacy Policy — Tally</h1>
-  <p class="meta"><strong>Effective date:</strong> 2026-06-06 &nbsp;·&nbsp; <strong>Last updated:</strong> 2026-06-06</p>
+  <p class="meta"><strong>Effective date:</strong> 2026-07-03 &nbsp;·&nbsp; <strong>Last updated:</strong> 2026-07-03</p>
 
   <p>Tally (“the app”, “we”, “us”) is a personal-finance app published by <strong>NeoSystems</strong>.
   This policy explains what data the app handles, when it leaves your device, and your choices.
@@ -44,20 +44,28 @@
     <tr><th>Data</th><th>When it leaves your device</th><th>Purpose</th><th>Control</th></tr>
     <tr><td><strong>Email address</strong></td><td>When you create an account / sign in</td><td>Authentication, sync, family features (sign-in confirmation codes)</td><td>Optional — only if you sign in</td></tr>
     <tr><td><strong>Financial data</strong> (transactions, budgets, projects, subscriptions, imported bank-statement entries)</td><td>When signed in with cloud sync</td><td>Sync your data across your devices</td><td>Optional — only when signed in</td></tr>
-    <tr><td><strong>Receipt images &amp; extracted text</strong></td><td>When you enable “AI receipt cleanup”, per receipt</td><td>Fix scan errors and suggest a category (cloud AI)</td><td>Off by default; per-use</td></tr>
+    <tr><td><strong>Receipt images &amp; extracted text</strong></td><td>When “AI receipt cleanup” is on, the receipt <strong>text and photo are sent for each scanned receipt</strong> (the photo helps read faded/unclear receipts)</td><td>Fix scan errors and suggest a category (cloud AI)</td><td>Off by default; per-use</td></tr>
     <tr><td><strong>Receipt images (training)</strong></td><td>Only if you enable “Share my receipts”</td><td>Help improve our receipt models; earns you AI credits</td><td>Off by default; opt-in</td></tr>
-    <tr><td><strong>Bank-statement text</strong></td><td>When you import a PDF and AI categorization is on</td><td>Parse unrecognized banks / categorize entries. <strong>The raw PDF is never uploaded</strong> — only extracted text or the merchant list</td><td>Optional — only on import</td></tr>
+    <tr><td><strong>Bank-statement text</strong></td><td>When you import a PDF and AI categorization is on</td><td>Parse unrecognized banks / categorize entries. <strong>The raw PDF is never uploaded</strong> — only the extracted statement text (which includes transaction amounts, dates, and descriptions)</td><td>Optional — only on import</td></tr>
     <tr><td><strong>Push/device token</strong></td><td>When signed in</td><td>Notify you of family changes when the app is closed</td><td>Optional — only when signed in</td></tr>
-    <tr><td><strong>Diagnostics / crash logs</strong></td><td>Only if you enable “Send crash reports”</td><td>Diagnose crashes. <strong>Redacted</strong> — no amounts, merchants, notes, or emails</td><td>Off by default; opt-in</td></tr>
+    <tr><td><strong>Diagnostics / crash logs &amp; usage analytics</strong></td><td>Only if you enable “Diagnostics &amp; usage analytics”</td><td>Diagnose crashes and understand how features are used so we can improve the app. <strong>Redacted / PII-free</strong> — only event names and anonymous tags, never amounts, merchants, notes, or emails</td><td>Off by default; opt-in</td></tr>
   </table>
   <p>We do <strong>not</strong> sell your data. We do <strong>not</strong> use it for advertising. We do not
   access other apps installed on your device.</p>
 
   <h2>Third-party processors</h2>
-  <p>When cloud features are used, data is processed by: <strong>Amazon Web Services</strong> (Cognito
-  authentication, AppSync/DynamoDB sync, S3 image storage, AWS Bedrock for AI — in the EU region), and
-  <strong>Google Firebase Cloud Messaging</strong> (push notifications). These providers process data on
-  our behalf under their own security and privacy terms. Data is encrypted in transit.</p>
+  <p>When cloud features are used, data is processed by:</p>
+  <ul>
+    <li><strong>Amazon Web Services</strong> — Cognito authentication, AppSync/DynamoDB sync, S3 image
+      storage, and AWS Bedrock (Anthropic Claude) for AI, in the EU region.</li>
+    <li><strong>Resend</strong> — sends your account verification and password-reset codes by email
+      (receives your email address and the one-time code), EU region.</li>
+    <li><strong>RevenueCat</strong> — manages subscriptions and entitlements (receives your account
+      identifier and purchase/subscription state).</li>
+    <li><strong>Google Firebase Cloud Messaging</strong> — push notifications (receives a device push token).</li>
+  </ul>
+  <p>These providers process data on our behalf under their own security and privacy terms.
+  We do not sell your data or use it for advertising. Data is encrypted in transit.</p>
 
   <h2>Data retention and deletion</h2>
   <p>Your data is retained while your account is active. You can, at any time, from <strong>Settings</strong>:</p>
@@ -72,7 +80,8 @@
   <strong><a href="data-deletion.html">Data Deletion</a></strong>.</p>
 
   <h2>Children</h2>
-  <p>Tally is not directed to children and is not intended for users under 13 (or the minimum age in your country).</p>
+  <p>Tally is not directed to children. It is not intended for users under <strong>16 in the EU/EEA</strong>
+  (or the digital-consent age set by your country, where lower — minimum 13), or under <strong>13 elsewhere</strong>.</p>
 
   <h2>Your rights</h2>
   <p>Depending on your region (e.g. EU/EEA under GDPR), you have rights to access, export, correct, and
