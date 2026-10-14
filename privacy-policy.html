@@ -26,7 +26,7 @@
 <div class="bar"></div>
 <main>
   <h1>Privacy Policy — Tally</h1>
-  <p class="meta"><strong>Effective date:</strong> 2026-07-03 &nbsp;·&nbsp; <strong>Last updated:</strong> 2026-07-03</p>
+  <p class="meta"><strong>Effective date:</strong> 2026-10-14 &nbsp;·&nbsp; <strong>Last updated:</strong> 2026-10-14</p>
 
   <p>Tally (“the app”, “we”, “us”) is a personal-finance app published by <strong>NeoSystems</strong>.
   This policy explains what data the app handles, when it leaves your device, and your choices.
@@ -35,8 +35,12 @@
   <h2>Our core principle: local-first</h2>
   <p>Tally works <strong>fully offline</strong>. All of your finance data is stored <strong>on your
   device</strong> by default. Cloud features (account sign-in, sync, AI receipt cleanup, family
-  sharing, push notifications) are <strong>optional</strong>, and the data-sharing ones are
-  <strong>off by default</strong> and gated behind explicit in-app consent. If you never sign in,
+  sharing, push notifications) are <strong>optional</strong>. AI receipt cleanup is part of the
+  receipt-scanning service and is <strong>on by default for signed-in users</strong> — you are shown
+  exactly what is sent before your first scan, and you can turn it off on that screen or anytime in
+  Settings → Cloud AI. Redacted diagnostics &amp; usage analytics (no amounts, merchants, notes or
+  emails) are also <strong>on by default</strong> — shown on the same screen and switchable off there
+  or in Settings. Receipt sharing for training is <strong>off by default</strong> and opt-in. If you never sign in,
   <strong>no personal or financial data leaves your device.</strong></p>
 
   <h2>What we collect and when it leaves your device</h2>
@@ -44,11 +48,11 @@
     <tr><th>Data</th><th>When it leaves your device</th><th>Purpose</th><th>Control</th></tr>
     <tr><td><strong>Email address</strong></td><td>When you create an account / sign in</td><td>Authentication, sync, family features (sign-in confirmation codes)</td><td>Optional — only if you sign in</td></tr>
     <tr><td><strong>Financial data</strong> (transactions, budgets, projects, subscriptions, imported bank-statement entries)</td><td>When signed in with cloud sync</td><td>Sync your data across your devices</td><td>Optional — only when signed in</td></tr>
-    <tr><td><strong>Receipt images &amp; extracted text</strong></td><td>When “AI receipt cleanup” is on, the receipt <strong>text and photo are sent for each scanned receipt</strong> (the photo helps read faded/unclear receipts)</td><td>Fix scan errors and suggest a category (cloud AI)</td><td>Off by default; per-use</td></tr>
+    <tr><td><strong>Receipt images &amp; extracted text</strong></td><td>When “AI receipt cleanup” is on, the receipt <strong>text and photo are sent for each scanned receipt</strong> (the photo helps read faded/unclear receipts)</td><td>Fix scan errors and suggest a category (cloud AI). Legal basis: performance of the service you requested (GDPR Art. 6(1)(b))</td><td>On by default when signed in; turn off anytime in Settings → Cloud AI</td></tr>
     <tr><td><strong>Receipt images (training)</strong></td><td>Only if you enable “Share my receipts”</td><td>Help improve our receipt models; earns you AI credits</td><td>Off by default; opt-in</td></tr>
     <tr><td><strong>Bank-statement text</strong></td><td>When you import a PDF and AI categorization is on</td><td>Parse unrecognized banks / categorize entries. <strong>The raw PDF is never uploaded</strong> — only the extracted statement text (which includes transaction amounts, dates, and descriptions)</td><td>Optional — only on import</td></tr>
     <tr><td><strong>Push/device token</strong></td><td>When signed in</td><td>Notify you of family changes when the app is closed</td><td>Optional — only when signed in</td></tr>
-    <tr><td><strong>Diagnostics / crash logs &amp; usage analytics</strong></td><td>Only if you enable “Diagnostics &amp; usage analytics”</td><td>Diagnose crashes and understand how features are used so we can improve the app. <strong>Redacted / PII-free</strong> — only event names and anonymous tags, never amounts, merchants, notes, or emails</td><td>Off by default; opt-in</td></tr>
+    <tr><td><strong>Diagnostics / crash logs &amp; usage analytics</strong></td><td>When signed in and “Diagnostics &amp; usage analytics” is on</td><td>Diagnose crashes and understand how features are used so we can improve the app. <strong>Redacted / PII-free</strong> — only event names and anonymous tags, never amounts, merchants, notes, or emails. Legal basis: our legitimate interest in a working, secure app (GDPR Art. 6(1)(f))</td><td>On by default; turn off on the first-run screen or anytime in Settings</td></tr>
   </table>
   <p>We do <strong>not</strong> sell your data. We do <strong>not</strong> use it for advertising. We do not
   access other apps installed on your device.</p>
